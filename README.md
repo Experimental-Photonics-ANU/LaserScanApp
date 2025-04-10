@@ -1,6 +1,6 @@
 # Laser Scan App
 ## Installation
-The requirements file, generated with `pipreqs`, should enable simple installation. After cloning the **Laser Scan App** repository, setup a new environment using python 3.11 as the main interpreter. Then from the repository root directory run:
+The requirements file, generated with `pipreqs`, should enable simple installation. After cloning the **LaserScanApp** repository, setup a new environment using python 3.11 as the main interpreter. Then from the repository root directory run:
 
 ```
 pip install -r requirements.txt
