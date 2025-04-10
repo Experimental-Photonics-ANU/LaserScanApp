@@ -1,0 +1,10 @@
+For the laser control we need GPIB drivers form NI (National Instruments) and some other useful software.
+	- NI package manager - software for installation of different NI package.
+	- NI MAX - NI measurement and automation explorer.
+	- NI-488.2 - can be downloaded form the website.
+!!! Only NI-488.2 GPIB drivers are required, but the others are useful.
+ 	
+	
+For the Xeneth XS-5047 camera control we need calibration file
+	- ............new_calibration_test_1000us_1191.xca
+	- original camera drivers installed. 
