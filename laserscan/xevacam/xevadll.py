@@ -5,6 +5,7 @@ Created on 16.11.2016
 '''
 
 from sys import platform as sys_plat
+import pathlib
 import os, sys
 import ctypes
 from ctypes import windll, cdll, CDLL, WINFUNCTYPE, CFUNCTYPE, \

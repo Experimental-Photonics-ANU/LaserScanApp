@@ -1,5 +1,5 @@
 
-import xevacam.xevadll as xdll
+import laserscan.xevacam.xevadll as xdll
 import threading
 import queue
 

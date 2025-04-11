@@ -5,15 +5,15 @@ Created on 9.11.2016
 '''
 
 import numpy as np
-import xevacam.xevadll as xdll
+import laserscan.xevacam.xevadll as xdll
 from contextlib import contextmanager
 import threading
 import queue
 import sys
 import time
 import struct
-import xevacam.utils as utils
-from xevacam.utils import kbinterrupt_decorate
+import laserscan.xevacam.utils as utils
+from laserscan.xevacam.utils import kbinterrupt_decorate
 
 '''
 class ExceptionThread(threading.Thread):
