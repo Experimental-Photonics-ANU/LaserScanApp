@@ -26,7 +26,7 @@ if __name__ == "__main__":
         
         #initialize camera
         # cam = camera.XevaCam(calibration='none')
-        cam.start_capture()
+        cam.start_capture(camera_path=r"cam://0", sw_correction=False)
       
 
         # initialize GUI

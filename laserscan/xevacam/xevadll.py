@@ -145,7 +145,10 @@ class XDLL(object):
     # ctypes.WinDLL('kernel32')
     # directory = 'C:\\MyTemp\\envs\\xevacam\\Lib\\site-packages\\'
     # directory = r'C:\Users\TMOS LAB\Desktop\XevaCamController\xevacam'
-    directory = str(pathlib.Path(__file__).parent)
+    # directory = str(pathlib.Path(__file__).parent)
+    directory = r"C:\Program Files\Common Files\XenICs\Runtime"
+    if not pathlib.Path(directory).exists():
+        raise Exception(f"The expected directory for the xeneth DLL file not found in {directory}")
     # directory = ''
     # print(xenethC_path)
     # os.chdir(directory)
