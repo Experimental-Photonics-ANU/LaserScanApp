@@ -2,7 +2,7 @@ from laserscan.lasercontrol import LaserSource
 from laserscan.gui import LaserScanApp
 from laserscan.xevacam.camera import XevaCam
 import os
-import datetime
+from datetime import datetime
 
 
 """ Launch the GUI - requires some customization to point to the correct Xeneth control software path """
@@ -21,13 +21,12 @@ if __name__ == "__main__":
         print(f"current wavelength: {laser.wavelength}")
         laser.power = True
         laser.write(":OUTP:TRAC OFF")
-
-        # cam = camera.XevaCam()
-        cam = XevaCam(calibration=r"C:\Program Files\Xeneth\Calibrations\XS5047_1ms_HG_RT_5047.xca")
+        cam = XevaCam()
+        # cam = XevaCam(calibration=r"C:\Program Files\Xeneth\Calibrations\XS5047_1ms_HG_RT_5047.xca")
         
         #initialize camera
         # cam = camera.XevaCam(calibration='none')
-        cam.start_capture(camera_path='cam://0', sw_correction=True)
+        cam.start_capture()
       
 
         # initialize GUI

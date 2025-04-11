@@ -144,7 +144,8 @@ class XDLL(object):
 
     # ctypes.WinDLL('kernel32')
     # directory = 'C:\\MyTemp\\envs\\xevacam\\Lib\\site-packages\\'
-    directory = r'C:\Users\TMOS LAB\Desktop\XevaCamController\xevacam'
+    # directory = r'C:\Users\TMOS LAB\Desktop\XevaCamController\xevacam'
+    directory = str(pathlib.Path(__file__).parent)
     # directory = ''
     # print(xenethC_path)
     # os.chdir(directory)
